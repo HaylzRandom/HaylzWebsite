@@ -156,6 +156,10 @@
   transition-delay: 0.55s;
 }
 
+.menu-nav__item:nth-child(5) {
+  transition-delay: 0.65s;
+}
+
 .about {
   padding-bottom: 2rem;
 }
@@ -172,7 +176,7 @@
 }
 
 .about p {
-  margin-bottom: 2rem;
+  margin-bottom: 1.4rem;
 }
 
 .about__bio {
@@ -207,12 +211,90 @@
   margin: 0.3rem 0;
 }
 
+.about .jobs__job ul {
+  margin-left: 14px;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
 .about .social-icons {
   display: flex;
   flex-direction: column;
 }
 
 .about footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.training {
+  padding-bottom: 2rem;
+}
+
+.training li {
+  list-style-type: square;
+}
+
+.training__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.7)), url("../img/background.jpg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.training p {
+  margin-bottom: 1.4rem;
+}
+
+.training__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.training__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.training .train {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  line-height: 1.2;
+}
+
+.training .train h4 {
+  margin-bottom: 1rem;
+}
+
+.training .train .h4-bottom {
+  margin-top: 1rem;
+}
+
+.training .train ul {
+  margin-left: 14px;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
+}
+
+.training .train a {
+  transition: all 0.5s ease-in-out;
+}
+
+.training .train a:hover {
+  color: #E39FF6;
+}
+
+.training .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.training footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
@@ -370,6 +452,26 @@
   }
   .projects .text-secondary {
     font-size: 3rem;
+  }
+  .train {
+    text-align: left;
+    grid-template-areas: 'current future' 'progressing completed';
+    grid-gap: 1rem;
+  }
+  .train .current {
+    grid-area: current;
+  }
+  .train .future {
+    grid-area: future;
+  }
+  .train .progressing {
+    grid-area: progressing;
+  }
+  .train .completed {
+    grid-area: completed;
+  }
+  .train h4 {
+    margin-top: 1rem;
   }
   .contact__list {
     grid-template-columns: repeat(2, 1fr);

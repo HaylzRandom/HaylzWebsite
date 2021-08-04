@@ -1,5 +1,9 @@
-.about {
+.training {
 	padding-bottom: 2rem;
+
+	li {
+		list-style-type: square;
+	}
 
 	&__bio-image {
 		height: 50vh;
@@ -16,7 +20,6 @@
 		align-items: center;
 		justify-content: flex-end;
 	}
-
 	p {
 		margin-bottom: 1.4rem;
 	}
@@ -30,35 +33,37 @@
 		}
 	}
 
-	.jobs {
+	.train {
 		width: 60vw;
 		margin: 2rem auto 0 auto;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 2rem;
+		grid-gap: 1rem;
+		line-height: 1.2;
+		//align-content: space-around;
 
-		&__job {
-			background: lighten($primary-color, 10%);
-			padding: 0.5rem;
-			border-bottom: 5px solid $secondary-color;
+		h4 {
+			margin-bottom: 1rem;
+		}
 
-			h2,
-			h3 {
-				margin: 0.5rem 0;
-			}
+		.h4-bottom {
+			margin-top: 1rem;
+		}
 
-			h6 {
-				margin: 0.3rem 0;
-			}
+		ul {
+			margin-left: 14px;
+			margin-bottom: 1.2rem;
+			line-height: 1.2;
+		}
 
-			ul {
-				margin-left: 14px;
-				margin-bottom: 1.2rem;
-				line-height: 1.2;
+		a {
+			@include transition-ease;
+
+			&:hover {
+				color: $secondary-color;
 			}
 		}
 	}
-
 	.social-icons {
 		display: flex;
 		flex-direction: column;

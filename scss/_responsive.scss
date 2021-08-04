@@ -42,6 +42,35 @@
 		}
 	}
 
+	.train {
+		text-align: left;
+		//grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'current future'
+			'progressing completed';
+		grid-gap: 1rem;
+
+		.current {
+			grid-area: current;
+		}
+
+		.future {
+			grid-area: future;
+		}
+
+		.progressing {
+			grid-area: progressing;
+		}
+
+		.completed {
+			grid-area: completed;
+		}
+
+		h4 {
+			margin-top: 1rem;
+		}
+	}
+
 	.contact__list {
 		grid-template-columns: repeat(2, 1fr);
 	}
