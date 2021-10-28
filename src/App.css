@@ -3,7 +3,7 @@
 .app {
 	font-family: 'Zen Kurenaido', sans-serif;
 	line-height: 1.5;
-	color: var (--clr-fg);
+	color: var(--clr-fg);
 	background-color: var(--clr-bg);
 }
 
@@ -18,13 +18,13 @@
 
 
 .dark {
-	--clr-bg: #352142;
-	--clr-bg-alt: #2a2f4c;
-	--clr-fg: #bdbddd;
-	--clr-fg-alt: #cdcdff;
-	--clr-primary: #573f81;
-	--shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-		rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+	--clr-bg: #302433;
+	--clr-bg-alt: rgb(122, 79, 141);
+	--clr-fg: rgb(234, 225, 238);
+	--clr-fg-alt: #8b7094;
+	--clr-primary: #b179c2;
+	--shadow: rgba(180, 150, 189, 0.16) 0px 10px 36px 0px,
+		rgba(94, 91, 91, 0.06) 0px 0px 0px 1px;
 }
 
 main {

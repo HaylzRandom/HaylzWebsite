@@ -9,7 +9,7 @@ const about = {
 	name: 'Hayley McCafferty',
 	role: 'Self-Learning Web Developer',
 	description:
-		'A highly motivated individual who has self-taught the skills required to be a web developer.',
+		'A highly motivated individual who has self-taught herself the skills required to be a web developer.',
 	resume: '#',
 	social: {
 		linkedin: 'https://www.linkedin.com/in/hayleymcc/',
@@ -52,6 +52,7 @@ const skills = [
 	'HTML',
 	'CSS',
 	'JavaScript',
+	'SQL',
 	'React',
 	'Redux',
 	'SASS',
