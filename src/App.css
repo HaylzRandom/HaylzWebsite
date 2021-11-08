@@ -7,22 +7,30 @@
 	background-color: var(--clr-bg);
 }
 
-.light {
+/* .light {
 	--clr-bg: #d2b3da;
 	--clr-bg-alt: rgb(234, 225, 238);
 	--clr-fg: #555;
 	--clr-fg-alt: #444;
 	--clr-primary: #9429b5;
-	--shadow: rgab(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+	--shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+} */
 
+.light {
+	--clr-bg: #cdb2e4;
+	--clr-bg-alt: rgba(158, 70, 185, 0.24);
+	--clr-fg: #555;
+	--clr-fg-alt: #444;
+	--clr-primary: #7629b5;
+	--shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 .dark {
 	--clr-bg: #302433;
-	--clr-bg-alt: rgb(122, 79, 141);
+	--clr-bg-alt: rgb(92, 56, 126);
 	--clr-fg: rgb(234, 225, 238);
-	--clr-fg-alt: #8b7094;
-	--clr-primary: #b179c2;
+	--clr-fg-alt: #bea0ca;
+	--clr-primary: #9764b4;
 	--shadow: rgba(180, 150, 189, 0.16) 0px 10px 36px 0px,
 		rgba(94, 91, 91, 0.06) 0px 0px 0px 1px;
 }
@@ -130,6 +138,7 @@ main {
 	background-color: var(--clr-bg-alt);
 	box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 	border: 0;
+	border-radius: 15px;
 }
 
 .btn--plain:hover {
@@ -152,5 +161,10 @@ main {
 @media (max-width: 600px) {
 	.section {
 		margin-top: 4em;
+	}
+
+	.section projects {
+		justify-content: center;
+		align-items: center;
 	}
 }

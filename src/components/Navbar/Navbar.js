@@ -4,7 +4,7 @@ import { BsFillBrightnessHighFill as DayModeIcon } from 'react-icons/bs';
 import { GiHamburgerMenu as MenuIcon } from 'react-icons/gi';
 import { GrClose as CloseIcon } from 'react-icons/gr';
 import { ThemeContext } from '../../contexts/theme';
-import { projects, skills, contact } from '../../portfolio';
+import { projects, skills, contact, training } from '../../portfolio';
 
 import './Navbar.css';
 
@@ -37,6 +37,17 @@ const Navbar = () => {
 							onClick={toggleNavList}
 							className='link link--nav'>
 							Skills
+						</a>
+					</li>
+				) : null}
+
+				{training.length ? (
+					<li className='nav__list-item'>
+						<a
+							href='#skills'
+							onClick={toggleNavList}
+							className='link link--nav'>
+							Training
 						</a>
 					</li>
 				) : null}

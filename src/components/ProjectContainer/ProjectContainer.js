@@ -8,12 +8,19 @@ import './ProjectContainer.css';
 const ProjectContainer = ({ project }) => (
 	<div className='project'>
 		<h3>{project.name}</h3>
-
+		{project.imageUrl && (
+			<img
+				className='project__image'
+				src={project.imageUrl}
+				alt={project.name}
+			/>
+		)}
 		<p className='project__description'>{project.description}</p>
+
 		{project.stack && (
 			<ul className='project__stack'>
 				{project.stack.map((item) => (
-					<li key={uniqid()} className='project__stack-item'>
+					<li key={uniqid()} className='project__stack-item btn--plain'>
 						{item}
 					</li>
 				))}
@@ -26,7 +33,8 @@ const ProjectContainer = ({ project }) => (
 				aria-label='source code'
 				className='link link--icon'
 				target='_blank'
-				rel='noreferrer'>
+				rel='noreferrer'
+				title='GitHub Repo'>
 				<GitHubIcon />
 			</a>
 		)}
@@ -37,7 +45,8 @@ const ProjectContainer = ({ project }) => (
 				aria-label='live preview'
 				className='link link--icon'
 				target='_blank'
-				rel='noreferrer'>
+				rel='noreferrer'
+				title='Live Preview'>
 				<LaunchIcon />
 			</a>
 		)}
