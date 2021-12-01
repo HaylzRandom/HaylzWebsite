@@ -47,6 +47,7 @@
 	}
 
 	.project__image {
-		margin: 0 auto;
+		/* margin: 0 auto; */
+		margin-top: 5px;
 	}
 }

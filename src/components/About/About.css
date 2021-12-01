@@ -32,6 +32,14 @@
 @media (max-width: 600px) {
 	.app .about {
 		align-items: flex-start;
-		margin-top: 2em;
+		margin: 0 auto;
+		/* margin-top: 2em; */
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.about__name {
+		line-height: 1.4;
 	}
 }
